@@ -1,4 +1,5 @@
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 const SideBar = () => {
     const explore = [
@@ -17,20 +18,22 @@ const SideBar = () => {
 
     const isMenuOpen = useSelector((store) => store.app.isMenuOpen);
     return !isMenuOpen ? "" : (
-        <div className="col-span-1 shadow-lg p-2">
-            <div className="m-3">
+        <div className="w-48 shadow-lg px-2 m-3">
+            <div className="">
                 <ul>
-                    <li>Home</li>
-                    <li>Shorts</li>
-                    <li>Subscriptions</li>
+                    <li key={"1"}>
+                        <Link to={"/"}>Home</Link>
+                    </li>
+                    <li key={"2"}>Shorts</li>
+                    <li key={"3"}>Subscriptions</li>
                 </ul>
             </div>
             <hr />
-            <div className="p-3">
+            <div className="mt-3">
                 <h1 className="font-bold">Explore</h1>
                 <ul>
                     {explore.map((item) => {
-                        return <li id={item}>{item}</li>
+                        return <li key={item}>{item}</li>
                     })}
                 </ul>
             </div>
