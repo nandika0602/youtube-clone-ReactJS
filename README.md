@@ -1,3 +1,16 @@
+## Overview
+
+This project is a YouTube clone with features such as YouTube Live API integration, search functionality, shimmer card loading, routing, state management using Redux Toolkit, and styling with Tailwind CSS.
+
+## Features
+
+- **YouTube Live API Integration:** Real-time integration with YouTube Live API for live streaming content.
+- **Search Functionality:** Users can search for videos using the search bar, and the application fetches relevant results from the YouTube API.
+- **Shimmer Card Loading:** Smooth loading experience with shimmer effect on cards while fetching data.
+- **Routing:** Implemented client-side routing for seamless navigation between different pages of the application.
+- **Redux Toolkit:** State management is handled using Redux Toolkit, providing a predictable state container for the application.
+- **Tailwind CSS:** Styling of the application is done using Tailwind CSS, offering a utility-first and highly customizable approach.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +81,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
